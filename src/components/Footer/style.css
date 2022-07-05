@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.shuffle-button {
+    background-color: #8ad9fd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
