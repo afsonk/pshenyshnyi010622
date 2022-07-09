@@ -1,13 +1,17 @@
 import "./style.css";
-import {IChartLine} from "../../utils/types";
+import {countLeftIndent} from "../../helpers";
+import {IChartLineExtended} from "../../types";
 
 type Props = {
-    line: IChartLine
+    line: IChartLineExtended,
+    arr: Array<IChartLineExtended>,
+    index: number
 };
 
-function ChartLine({line}: Props): JSX.Element {
+function ChartLine({line, arr, index}: Props): JSX.Element {
     const style = {
-        maxWidth: `${line.time * 10}%`
+        maxWidth: `${line.width}%`,
+        left: `${countLeftIndent(arr, index)}%`
     };
 
     return (

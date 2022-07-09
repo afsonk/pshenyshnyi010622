@@ -37,4 +37,8 @@
         flex-direction: column;
         grid-gap: 15px;
     }
+
+    .chart-line__text {
+        text-align: center;
+    }
 }
